@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-16"?><Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net471</TargetFrameworks>
+	  <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net471|AnyCPU'">
+    <OutputPath>..\..\..\..\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="StateMachine\Services\**" />
+    <EmbeddedResource Remove="StateMachine\Services\**" />
+    <None Remove="StateMachine\Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdNPoco" Version="2.0.6" />
+    <PackageReference Include="Ninject" Version="3.2.0" />
+  </ItemGroup>
+
+</Project>

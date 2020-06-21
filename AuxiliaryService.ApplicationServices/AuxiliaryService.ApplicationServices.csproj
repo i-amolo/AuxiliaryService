@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-16"?><Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net471</TargetFrameworks>
+	  <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net471|AnyCPU'">
+    <OutputPath>..\..\..\..\bin\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net471|AnyCPU'">
+    <NoWarn>1701;1702;1705;CA1305;CA1507;CA1716;CA2208</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Adacta.AdInsure.DocumentManagement.SPI" Version="3.3.10" />
+    <PackageReference Include="Adacta.AdInsure.Framework.Core.API" Version="3.3.10" />
+    <PackageReference Include="Adacta.AdInsure.Framework.Core.ApplicationServices" Version="3.3.10" />
+    <PackageReference Include="Adacta.AdInsure.Framework.Core.Domain" Version="3.3.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PAS\Adacta.AdInsure.Sogaz.PAS.Domain\Adacta.AdInsure.Sogaz.PAS.Domain.csproj" />
+    <ProjectReference Include="..\AuxiliaryService.API\AuxiliaryService.API.csproj" />
+    <ProjectReference Include="..\AuxiliaryService.Domain\AuxiliaryService.Domain.csproj" />
+    <ProjectReference Include="..\AuxiliaryService.Infrastructure\AuxiliaryService.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-16"?><Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net471</TargetFrameworks>
+	  <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net471|AnyCPU'">
+    <OutputPath>..\..\..\..\bin\</OutputPath>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Adacta.AdInsure.Core.API" Version="3.3.10" />
+    <PackageReference Include="Ninject" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuxiliaryService.Domain\AuxiliaryService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
