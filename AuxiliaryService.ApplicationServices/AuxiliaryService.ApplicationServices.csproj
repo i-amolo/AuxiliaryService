@@ -14,14 +14,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Adacta.AdInsure.DocumentManagement.SPI" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Framework.Core.API" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Framework.Core.ApplicationServices" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Framework.Core.Domain" Version="3.3.10" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\PAS\Adacta.AdInsure.Sogaz.PAS.Domain\Adacta.AdInsure.Sogaz.PAS.Domain.csproj" />
     <ProjectReference Include="..\AuxiliaryService.API\AuxiliaryService.API.csproj" />
     <ProjectReference Include="..\AuxiliaryService.Domain\AuxiliaryService.Domain.csproj" />
     <ProjectReference Include="..\AuxiliaryService.Infrastructure\AuxiliaryService.Infrastructure.csproj" />

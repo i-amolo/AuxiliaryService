@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Adacta.AdInsure.Framework.ApplicationContextManager.Server.Processing;
-using Adacta.AdInsure.Framework.Core.API.Shared.Common.Interfaces;
-using Adacta.AdInsure.Framework.Core.Domain.DomainEvents.Interfaces;
-using Adacta.AdInsure.Framework.Core.Messaging;
 using AuxiliaryService.API.Shared.Notification.Email;
 using AuxiliaryService.API.Shared.Notification.Email.DTO;
 using AuxiliaryService.Domain.Notification.Consts;

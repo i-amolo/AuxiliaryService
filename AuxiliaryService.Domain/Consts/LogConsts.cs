@@ -2,6 +2,6 @@
 {
     public class LogConsts
     {
-        public const string SogazEmailNotification = "SogazEmailNotification";
+        public const string EmailNotification = "EmailNotification";
     }
 }

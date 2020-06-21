@@ -1,6 +1,4 @@
-﻿using Adacta.AdInsure.Framework.Core.Ioc;
-using Adacta.AdInsure.Framework.Core.ConfigurationSettings.Interfaces;
-using Ninject;
+﻿using Ninject;
 using AuxiliaryService.Domain.Notification.Services;
 using AuxiliaryService.DomainService.Notification.Services;
 using AuxiliaryService.Domain.Notification.Providers.Email;

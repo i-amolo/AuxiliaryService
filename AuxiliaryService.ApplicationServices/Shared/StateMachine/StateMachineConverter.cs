@@ -1,5 +1,4 @@
-﻿using Adacta.AdInsure.Framework.Core.AutoMapperConfiguration;
-using AuxiliaryService.API.Shared.StateMachine.DTO;
+﻿using AuxiliaryService.API.Shared.StateMachine.DTO;
 using AuxiliaryService.Domain.StateMachine;
 using AutoMapper;
 using Newtonsoft.Json;

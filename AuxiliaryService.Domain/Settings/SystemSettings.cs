@@ -1,6 +1,4 @@
-﻿using Adacta.AdInsure.Framework.Core.ConfigurationSettings.Interfaces;
-using Adacta.AdInsure.Framework.Core.Localization;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +19,6 @@ namespace AuxiliaryService.Domain.Settings
 
         public string Module => LocalizationServiceRegistrator.CORE;
 
-        public string ClientRootUrl => _provider.GetSetting<string>(AppSettingsSection, "AdInsure:Sogaz:ClientRootUrl");
+        public string ClientRootUrl => _provider.GetSetting<string>(AppSettingsSection, "ClientRootUrl");
     }
 }

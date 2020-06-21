@@ -1,5 +1,4 @@
-﻿using Adacta.AdInsure.Framework.Core.Data.Transactions;
-using AuxiliaryService.API.Shared.StateMachine;
+﻿using AuxiliaryService.API.Shared.StateMachine;
 using AuxiliaryService.API.Shared.StateMachine.Consts;
 using AuxiliaryService.API.Shared.StateMachine.DTO;
 using AuxiliaryService.Domain.StateMachine.Repositories;

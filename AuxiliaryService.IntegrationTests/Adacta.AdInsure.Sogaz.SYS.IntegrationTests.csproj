@@ -17,23 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Adacta.AdInsure.Configurator.Bootstrapper" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Core.Bootstrapper" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.DocumentManagement.Bootstrapper" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Framework.Core.Data" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Framework.Core.Data.Oracle" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Framework.Core.TestingInfrastructure" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Organisation.Bootstrapper" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.Party.Bootstrapper" Version="3.3.10" />
-    <PackageReference Include="Adacta.AdInsure.PAS.Bootstrapper" Version="3.3.10" />
     <PackageReference Include="Moq" Version="4.2.1510.2205" />
     <PackageReference Include="NUnit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Spring.Data" Version="2.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Bootstrapper\Adacta.AdInsure.Sogaz.Bootstrapper\Adacta.AdInsure.Sogaz.Bootstrapper.csproj" />
-  </ItemGroup>
 
 </Project>

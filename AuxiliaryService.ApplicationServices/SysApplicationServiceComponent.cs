@@ -1,17 +1,4 @@
-﻿using Adacta.AdInsure.Framework.Core.API.Shared.Common.Interfaces;
-using Adacta.AdInsure.Framework.Core.ApplicationServices.DomainEvents;
-using Adacta.AdInsure.Framework.Core.AutoMapperConfiguration;
-using Adacta.AdInsure.Framework.Core.Common;
-using Adacta.AdInsure.Framework.Core.ConfigurationSettings.Interfaces;
-using Adacta.AdInsure.Framework.Core.Domain.DomainEvents.EndpointResolvers;
-using Adacta.AdInsure.Framework.Core.Domain.DomainEvents.Interfaces.Consumers;
-using Adacta.AdInsure.Framework.Core.Domain.DomainEvents.Interfaces.Handlers;
-using Adacta.AdInsure.Framework.Core.Domain.DomainEvents.Interfaces.Services;
-using Adacta.AdInsure.Framework.Core.Ioc;
-using Adacta.AdInsure.Framework.Core.Ioc.Ninject;
-using Adacta.AdInsure.Framework.Core.Messaging;
-using Adacta.AdInsure.Sogaz.Organization.API.Shared.v1.Users.Consts;
-using AuxiliaryService.API.ContextInitializer;
+﻿using AuxiliaryService.API.ContextInitializer;
 using AuxiliaryService.API.Shared.Integration.Rest;
 using AuxiliaryService.API.Shared.Integration.Smtp;
 using AuxiliaryService.API.Shared.IntegrationMap;
@@ -63,18 +50,14 @@ namespace AuxiliaryService.ApplicationServices
             Bind<ISmtpClient>().To<SmtpClient>().InSingletonScope();
 
             Bind<IApplicationContextInitializerFactory>().To<ApplicationContextInitializerFactory>().InSingletonScope();
-            Bind<SogazApplicationContextInitializer>().ToSelf();
+            Bind<ApplicationContextInitializer>().ToSelf();
 
             Bind<IEmailNotificationService>().To<EmailNotificationService>().InSingletonScope();
 
-            Bind<IClientLinkBuilder>().To<ClientLinkBuilder>().InSingletonScope();
-
-            Bind<IIntegrationMapService>().To<IntegrationMapService>().InSingletonScope();
         }
 
         private void Mappings()
         {
-            Bind<IAutoMapperConfiguration>().To<IntegrationMapServiceMapping>().InSingletonScope();
         }
 
         private void RegisterEventHandlers()
@@ -83,7 +66,7 @@ namespace AuxiliaryService.ApplicationServices
 
             var serviceMessagePersistenceService = KernelInstance.Get<IServiceMessagePersistenceService>();
             var serviceMessagePublisher = KernelInstance.Get<QueueServiceMessagePublisher>();
-            var moduleName = AdInsureModule.Framework.ToString();
+            var moduleName = Framework.ToString();
 
             var notificationHandler = new ReliableImmediateDomainEventHandler<NotificationDomainEvent, NotificationDomainEventMsg>(
                 serviceMessagePersistenceService,

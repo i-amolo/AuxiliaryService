@@ -1,5 +1,4 @@
-﻿using Adacta.AdInsure.Framework.ApplicationContextManager.Server.Processing;
-using Common.Logging;
+﻿using Common.Logging;
 using Quartz;
 using System;
 using System.Collections.Generic;

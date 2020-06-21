@@ -1,7 +1,4 @@
-﻿using Adacta.AdInsure.Framework.Core.ApplicationServices.Common;
-using Adacta.AdInsure.Framework.Core.Common;
-using Adacta.AdInsure.Framework.Core.Data.Transactions;
-using AuxiliaryService.API.Shared.Notification.Email;
+﻿using AuxiliaryService.API.Shared.Notification.Email;
 using AuxiliaryService.API.Shared.Notification.Email.DTO;
 using AuxiliaryService.Domain.Notification.Consts;
 using AuxiliaryService.Domain.Notification.Providers.Email;
@@ -22,7 +19,7 @@ namespace AuxiliaryService.ApplicationServices.Shared.Notification.Email
         #region ctor
 
         public EmailNotificationService(INotificationDomainService domainNotificationService)
-            : base(AdInsureModule.Framework.ToString())
+            : base(Framework.ToString())
         {
             _domainNotificationService = domainNotificationService;
         }

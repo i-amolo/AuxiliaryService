@@ -12,7 +12,6 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SharedDTOs = Adacta.AdInsure.Framework.Core.API.Shared.Entities.Common.DTO;
 
 namespace AuxiliaryService.DomainService.Notification.Services.Providers.Email
 {
@@ -32,7 +31,7 @@ namespace AuxiliaryService.DomainService.Notification.Services.Providers.Email
         public EmailNotificationProvider(ISmtpClient smtpClient,
                                          IEmailNotificationSettings settings,
                                          IContractService contractservice) 
-            : base(AdInsureModule.Framework.ToString())
+            : base(Framework.ToString())
         {
             _smtpClient = smtpClient;
             _settings = settings;
